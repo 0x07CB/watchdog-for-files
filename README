@@ -1,0 +1,7 @@
+not in read-only ?
+so you can just use that.
+
+feature:(in dev)
+- check hash
+- config file simple of settings 
+- show alert if anomaly and put versions in an json files and else
