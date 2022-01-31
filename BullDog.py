@@ -1,6 +1,7 @@
 #!/bin/python3
 #coding: utf-8
 
+# read config 
 watchlist = [ ] # files path .... to watch integrity
 
 algo_hash = "sha512"
