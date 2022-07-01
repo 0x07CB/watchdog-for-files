@@ -15,16 +15,22 @@ from base64 import b64decode as bdec
 
 class Dog(object):
     def __init__(self):
-        pass
+        self.logfilepath="grrr.log"
         
     def watch(self,filepath):
-        pass
+        with open(filepath, "rb") as f:
+            data = f.read()
+            f.close()
+        h = hashlib.sha3_512(data)
+        return h.hexdigest().decode()
         
     def whooaf(self,title,message):
         pass
         
-    def grrr(self,loglevel=1):
-        pass
+    def grrr(self):
+        with open(self.logfilepath, "a") as f:
+            f.write("{}\n".format(self.changes))
+            f.close()
         
     def storeCurrentBones(self):
         pass
@@ -32,5 +38,4 @@ class Dog(object):
     def undoVersion(self):
         pass
         
-    def extractArchivedVersionsOf(self,filepath):
-        pass
+    def extract(self,file)
