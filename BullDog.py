@@ -38,4 +38,6 @@ class Dog(object):
     def undoVersion(self):
         pass
 
-    def extract(self,file)
+    def extractAndLook(self,file):
+    	h = self.watch(file)
+    	
